@@ -1,0 +1,22 @@
+.number{
+    height: 20px;
+    width: 50px;
+}
+
+.operator{
+    height: 20px;
+    width: 50px;
+    background-color: darkgray;
+}
+
+.equals{
+    height: 20px;
+    width: 50px;
+    background-color: lightskyblue;
+    color: white;
+}
+
+#window{
+    width: 210px;
+    text-align: right;
+}
