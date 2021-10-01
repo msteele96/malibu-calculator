@@ -3,12 +3,17 @@
     <head>
         <title>Malibu Calculator</title>
         <link rel="stylesheet" href="style.css">
+        <script src="calculator.js"></script>
     </head>
     <body>
         <?php
             $first = 1000;
             $second = 982;
             $result = $first + $second;
+            // if ($result == 1982) {
+            //     # code...
+            // }
+            
         ?>
         <table>
             <input type="text" name="window" id="window" readonly="true" value=<?php echo $result?>>
@@ -43,5 +48,8 @@
                 <td><button class="operator">+</button></td>
             </tr>
         </table>
+
+        <!-- <iframe src="https://giphy.com/embed/lPoOHG39XAlV4it61H" width="1000" height="600" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
+
     </body>
 </html>
