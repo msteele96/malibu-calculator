@@ -8,14 +8,49 @@
     </head>
     <body>
         <?php
+            class Calculator {
+                private $_firstNum , $_secondNum;
+
+                public function __construct($firstNum, $secondNum){
+                    $this->_firstNum = $firstNum;
+                    $this->_secondNum = $secondNum;
+                }
+
+                
+                private function checkAnswer($result) {
+                    if ($result == 1982) {
+                        echo '<script type="text/javascript">showConfetti()</script>';
+                    }  
+                }
+
+                public function add(){
+                    $result = $this->_firstNum + $this->_secondNum;
+                    checkAnswer($result);
+                }
+
+                public function subtract(){
+                    $result = $this->_firstNum - $this->_secondNum;
+                    checkAnswer($result);       
+                }
+
+                public function multiply (){
+                    $result = $this->_firstNum * $this->_secondNum;
+                    checkAnswer($result);
+                }
+
+                public function divide () {
+                    $result = $this->_firstNum / $this->_secondNum;   
+                    checkAnswer($result);           
+                }
+
+            }
             $first = 1000;
             $second = 982;
             $result = $first + $second;
-            // if ($result == 1982) {
-            //     # code...
-            // }
-            echo '<script type="text/javascript">checkAnswer($result)</script>'
-            // need to include math operations and calculator function, then call the js function if answer is 1982
+
+            if ($result == 1982) {
+                echo '<script type="text/javascript"> testFunction() </script>';
+            }
         ?>
         <table>
             <input type="text" name="window" id="window" readonly="true" value=<?php echo $result?>>
@@ -53,8 +88,5 @@
         <div id="celebration">
 
         </div>
-
-        <!-- <iframe src="https://giphy.com/embed/lPoOHG39XAlV4it61H" width="1000" height="600" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
-
     </body>
 </html>
