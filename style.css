@@ -1,22 +1,10 @@
-.number{
-    height: 20px;
-    width: 50px;
-}
-
-.operator{
-    height: 20px;
-    width: 50px;
-    background-color: darkgray;
-}
-
-.equals{
-    height: 20px;
-    width: 50px;
-    background-color: lightskyblue;
-    color: white;
+.btn{
+    height: 40px;
+    width: 80px;
+    margin: 5px;
 }
 
 #window{
-    width: 210px;
+    width: 355px;
     text-align: right;
 }
